@@ -1,3 +1,4 @@
+![](https://img.shields.io/badge/Microverse-blueviolet) ![](https://img.shields.io/badge/MENGSTU-FENTAW-success) 
 # VET CLINIC DATABASE
 
 
@@ -12,33 +13,17 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 ## Authors
 
-👤 **Author1**
+👤 **Mengstu Fentaw**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- Github: [@mengiefen](https://github.com/mengiefen)
+- Twitter: [@MengistuFentaw](https://twitter.com/MengistuFentaw)
+- Linkedin: [@mengefen](https://www.linkedin.com/in/mengefen/)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
-
-## Show your support
-
-Give a ⭐️ if you like this project!
+## Contributers
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- To Microverse Community and *Ibaslogic* for handy tutorial at https://ibaslogic.com/react-tutorial-for-beginners/.
 
 ## 📝 License
 
