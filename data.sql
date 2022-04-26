@@ -100,28 +100,7 @@ INSERT INTO animals (
 )
 VALUES ( 'Ditto', '2022-05-14', 4, true, 22);
 
--- TRANSACTION
 
-BEGIN TRANSACTION;
-  UPDATE animals SET species='unspecified' WHERE species IS NULL;
-ROLLBACK;
-
-BEGIN TRANSACTION;
-  UPDATE animals SET species='digimon' WHERE name LIKE '%mon';
-  UPDATE animals SET species='pokemon' WHERE species IS NULL;
-COMMIT TRANSACTION;
-
-BEGIN TRANSACTION;
-  DELETE FROM animals;
-ROLLBACK;
-
-BEGIN TRANSACTION;
-  DELETE FROM animals WHERE date_of_birth>'2022-01-01';  
-  SAVEPOINT savepoint_1;
-  UPDATE animals SET weight_kg=-weight_kg WHERE weight_kg IS NOT NULL;
-  ROLLBACK TO savepoint_1;
-  UPDATE animals SET weight_kg=-weight_kg WHERE SIGN(weight_kg)==-1;
-COMMIT TRANSACTION;
 
 
 
