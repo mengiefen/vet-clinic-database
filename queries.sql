@@ -7,7 +7,7 @@ SELECT * FROM animals WHERE neutered;
 SELECT * FROM animals WHERE name<>'Gabumon';
 SELECT * FROM animals WHERE weight_kg>=10.4 AND weight_kg<=17.3;
 
-
+-- Queries for new exercise
 SELECT COUNT(*) FROM animals;
 SELECT COUNT(*) FROM animals WHERE SIGN(escape_attempts)=0;
 SELECT name, AVG(weight_kg) FROM animals;

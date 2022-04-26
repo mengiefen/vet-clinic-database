@@ -35,7 +35,7 @@ INSERT INTO animals (
   weight_kg) 
 VALUES ('Devimon', '2017-05-12', 5, true, 11);
 
--- -------------------------------------
+-- Update the animal table with new values(rows)
 
 INSERT INTO animals (
   name,
@@ -99,6 +99,8 @@ INSERT INTO animals (
   weight_kg
 )
 VALUES ( 'Ditto', '2022-05-14', 4, true, 22);
+
+-- TRANSACTION
 
 BEGIN TRANSACTION;
   UPDATE animals SET species='unspecified' WHERE species IS NULL;
