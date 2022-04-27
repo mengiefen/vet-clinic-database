@@ -23,7 +23,7 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 ## Acknowledgments
 
-- To Microverse Community and *Ibaslogic* for handy tutorial at https://ibaslogic.com/react-tutorial-for-beginners/.
+- To Microverse Community
 
 ## 📝 License
 
