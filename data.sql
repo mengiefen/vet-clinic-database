@@ -130,6 +130,52 @@ CASE
 	ELSE NULL
 END; 
 
+/* Insert Data to vets table */
+
+INSERT INTO vets(
+ name,
+  age,
+  date_of_graduation,
+) VALUES 
+('William Tatcher', 45, '2000-04-23'),
+('Maisy Smith', 26, '2019-01-17'),
+('Stephanie Mendez', 64, '1981-05-17'),
+('Jack Harkness', 38, '2008-01-06');
+
+/* Insert data to specializations table */
+INSERT INTO specialization(
+  species_id,
+  vets_id
+) VALUES 
+(1, 1), (3, 1), (3, 2),(4, 2);
+
+/* Insert data to visits table */
+INSERT INTO visits(  
+  animal_id,
+  vets_id,
+  date_of_visit
+) VALUES 
+(1, 1, '2020-05-24'),
+(1, 3, '2020-06-22'),
+(2, 4, '2021-02-02'),
+(3, 2,'2020-01-05'),
+(3, 2,'2020-03-08'),
+(3, 2,'2020-05-14'),
+(4, 3,'2021-05-04'),
+(5, 4,'2021-02-24'),
+(6, 2,'2019-12-21'),
+(6, 1,'2020-08-10'),
+(6, 2,'2021-04-07'),
+(7, 3,'2019-09-29'),
+(8, 4,'2020-10-03'),
+(8, 4,'2020-11-04'),
+(9, 2,'2019-01-24'),
+(9, 2,'2019-05-15'),
+(9, 2,'2020-02-27'),
+(9, 2,'2020-08-03'),
+(10, 3,'2020-05-24'),
+(10, 1,'2020-01-11');
+
 
 
 

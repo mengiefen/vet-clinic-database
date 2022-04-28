@@ -49,3 +49,41 @@ CREATE TABLE species(
   PRIMARY KEY(id)  
 );
 
+/* CREATES vets TABLE */
+
+CREATE TABLE vets(
+id INT GENERATED ALWAYS AS IDENTITY,
+name VARCHAR(100),
+age INT,
+date_of_graduation DATE,
+PRIMARY KEY(id)
+);
+/* CREATES JUNCTION TABLE BETWEEN vets and species */
+CREATE TABLE specialization(
+  id INT GENERATED ALWAYS AS IDENTITY,
+  species_id INT,
+  vets_id INT,
+  PRIMARY KEY(id),  
+  CONSTRAINT fk_species 
+  	FOREIGN KEY (species_id) REFERENCES species(id)
+  	ON DELETE CASCADE,
+  CONSTRAINT fk_vets 
+  	FOREIGN KEY (vets_id) REFERENCES vets(id)
+  	ON DELETE CASCADE
+);
+
+/* CREATES A JUNCTION TABLE between animals and vets */
+
+CREATE TABLE visits(
+  id INT GENERATED ALWAYS AS IDENTITY,
+  date_of_visit DATE,
+  animal_id INT,
+  vets_id INT,
+  PRIMARY KEY(id),
+  CONSTRAINT fk_animals 
+    FOREIGN KEY(animal_id) REFERENCES animals(id)
+    ON DELETE CASCADE,
+  CONSTRAINT fk_vets
+    FOREIGN KEY(vets_id) REFERENCES vets(id)
+    ON DELETE CASCADE
+);
