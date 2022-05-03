@@ -12,7 +12,7 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 ## Schema Diagram
 
-![](./Vet_clinic.png)
+![](./Vet_clinic.svg)
 
 ## Authors
 
